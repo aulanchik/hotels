@@ -1,6 +1,10 @@
 import { Hotel } from "@/types";
 
 const sortByPrice = (hotels: Hotel[]): Hotel[] =>
-  hotels.sort((a, b) => a.price - b.price);
+  hotels.slice().sort((a, b) => {
+    const priceA = parseFloat(a.price.replace(/,/g, ""));
+    const priceB = parseFloat(b.price.replace(/,/g, ""));
+    return priceA - priceB;
+  });
 
 export default sortByPrice;
