@@ -6,7 +6,7 @@ interface Hotel {
   price: string;
   image: string;
   departureFrom: string;
-  description: string;
+  description?: string;
   capacity: string;
   availability: {
     date: string;
