@@ -9,9 +9,9 @@
   padding: 3em 2em;
 
   &__background {
-    height: 100vh;
     background-image: url("./background.png");
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-repeat: repeat;
   }
 
   &__sort-options {
