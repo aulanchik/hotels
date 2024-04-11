@@ -1,0 +1,44 @@
+@import "./_base";
+@import "./_variables";
+
+.app {
+  display: grid;
+  grid-template-areas: "sidebar content";
+  grid-template-columns: 1fr 2fr;
+  background-color: $white;
+  padding: 3em 2em;
+
+  &__background {
+    background-image: url("./background.png");
+    background-size: auto 100%;
+    background-repeat: repeat;
+  }
+
+  &__sort-options {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  &__sort-button {
+    width: 300px;
+    height: 60px;
+    background: $white;
+    font-size: 1.2rem;
+    color: $dark-blue;
+    padding: 0px 12px;
+    border: 1px solid $dark-blue;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+
+    &.active {
+      background: $dark-blue;
+      color: $white;
+    }
+  }
+
+  &__sort-icon {
+    color: $grey;
+  }
+}
