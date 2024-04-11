@@ -1,0 +1,9 @@
+@import "../../_base";
+
+.list {
+  margin: 0 auto;
+
+  & .card + .card {
+    margin: 2rem 0;
+  }
+}

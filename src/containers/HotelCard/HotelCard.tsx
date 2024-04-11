@@ -37,7 +37,10 @@ const HotelCard: React.FC<Hotel> = ({
           <div className="card__rating">
             <StarRating rating={rating} />
           </div>
-          <p dangerouslySetInnerHTML={{ __html: capacity }}></p>
+          <p
+            className="card__capacity"
+            dangerouslySetInnerHTML={{ __html: capacity }}
+          ></p>
           <p className="card__availability">
             <strong>{date}</strong> for <strong>{duration}</strong>
           </p>

@@ -23,6 +23,7 @@
     "image": "images/hotel-image-2.png",
     "departureFrom": "Liverpool",
     "capacity": "<strong>2</strong> Adults, <strong>1</strong> child",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta similique, eaque dolores atque ipsam, amet quam laudantium nam, praesentium in culpa adipisci dolorum quaerat voluptas facilis perspiciatis architecto numquam. Vel.",
     "availability": {
       "date": "27th May 2019",
       "duration": "7 days"
@@ -30,15 +31,16 @@
   },
   {
     "id": 3,
-    "name": "Aguamarina Golf Hotel",
+    "name": "Las Piramides Resort",
     "location": "Costa Adeje, Tenerife",
     "rating": 3,
     "price": 499.99,
     "image": "images/hotel-image-3.png",
-    "departureFrom": "Liverpool",
-    "capacity": "<strong>2</strong> Adults, <strong>1</strong> child",
+    "departureFrom": "Manchester",
+    "capacity": "2 Adults, 2 children",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta similique, eaque dolores atque ipsam, amet quam laudantium nam, praesentium in culpa adipisci dolorum quaerat voluptas facilis perspiciatis architecto numquam. Vel.",
     "availability": {
-      "date": "27th May 2019",
+      "date": "3rd July 2019",
       "duration": "7 days"
     }
   }
