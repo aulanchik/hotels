@@ -45,17 +45,18 @@
   }
 
   &__title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: $dark-blue;
   }
 
   &__location {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: $grey;
   }
 
   &__rating {
+    margin: 6px auto;
     & svg {
       color: $gold;
       font-size: 1.25rem;
@@ -70,6 +71,7 @@
     text-align: center;
     padding: 10px 20px;
     font-size: 1.15rem;
+    font-weight: 500;
     margin-top: 10px;
     cursor: pointer;
 
@@ -84,10 +86,16 @@
     }
   }
 
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
   &__expandable-area {
     width: 100%;
     padding: 10px;
     background-color: $white;
+    border-bottom: 1px solid $light-grey;
 
     &__header {
       color: $dark-blue;
@@ -96,16 +104,19 @@
     }
 
     &__content {
-      padding: 10px 0;
+      padding: 12px 0;
       line-height: 1.5;
       font-size: 1.1rem;
     }
   }
 
   &__title,
+  &__capacity,
   &__location,
-  &__rating {
-    margin: 6px 0;
+  &__departure,
+  &__availability {
+    line-height: 18px;
+    margin: 8px 0;
   }
 }
 
