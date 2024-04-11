@@ -1,0 +1,114 @@
+@import "../../_base";
+@import "../../_variables";
+
+.card {
+  max-width: 800px;
+  background-color: $white;
+
+  &__content {
+    display: flex;
+  }
+
+  &__image-section {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__expand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $white;
+    padding: 6px 12px;
+    color: $dark-blue;
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__info-section {
+    padding: 20px 25px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    color: $dark-blue;
+  }
+
+  &__location {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $grey;
+  }
+
+  &__rating {
+    & svg {
+      color: $gold;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__book-button {
+    background-color: $gold;
+    border: none;
+    border-radius: 5px;
+    color: $dark-blue;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.15rem;
+    margin-top: 10px;
+    cursor: pointer;
+
+    width: 265px;
+    transition:
+      background-color 0.3s,
+      color 0.3s,
+      transform 0.3s;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+
+  &__expandable-area {
+    width: 100%;
+    padding: 10px;
+    background-color: $white;
+
+    &__header {
+      color: $dark-blue;
+      font-size: 1.2rem;
+      padding: 10px 0;
+    }
+
+    &__content {
+      padding: 10px 0;
+      line-height: 1.5;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__title,
+  &__location,
+  &__rating {
+    margin: 6px 0;
+  }
+}
+
+.card + .card {
+  margin: 2rem 0;
+}
