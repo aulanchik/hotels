@@ -3,7 +3,7 @@ interface Hotel {
   name: string;
   location: string;
   rating: number;
-  price: string;
+  price: number;
   image: string;
   departureFrom: string;
   description?: string;
